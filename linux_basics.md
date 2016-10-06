@@ -3,14 +3,14 @@ Command Line Basics
 
 The **shell** is a command line interpreter. In Linux we commonly use **bash** (Bourne Again Shell), but there are some other ones. Here is a short history of past and current shells:
 
-| Shell Name | Description                                                                                                           |
-|------------|-----------------------------------------------------------------------------------------------------------------------|
-| sh         | Bourne shell (Stephen R. Bourne, 1977) was published with Unix V7                                                     |
-| csh        | C Shell (Bill Joy, 1978); features like stopping and restarting commands in forground or background; aliases, history |
-| tcsh       | TENEX C Shell (1981), had some features like filename autocompletion                                                  |
-| ksh        | Korn shell (David Korn, 1983); merge of C and Bourne shell, orginally only commercially available                     |
-| bash       | Bourne Again Shell (1989), part of the GNU project, most common in Linux today, Windows port is called Cygwin         |
-| zsh        | Z shell (Paul Falstad, 1990); merge of the improvements from bash, csh, tcsh and ksh                                  |
+| Shell Name | Description                                                                                                            |
+|------------|------------------------------------------------------------------------------------------------------------------------|
+| sh         | Bourne shell (Stephen R. Bourne, 1977) was published with Unix V7                                                      |
+| csh        | C Shell (Bill Joy, 1978); features like stopping and restarting commands in foreground or background; aliases, history |
+| tcsh       | TENEX C Shell (1981), had some features like filename autocompletion                                                   |
+| ksh        | Korn shell (David Korn, 1983); merge of C and Bourne shell, orginally only commercially available                      |
+| bash       | Bourne Again Shell (1989), part of the GNU project, most common in Linux today, Windows port is part of Cygwin         |
+| zsh        | Z shell (Paul Falstad, 1990); merge of the improvements from bash, csh, tcsh and ksh                                   |
 
 (Source: https://de.wikipedia.org/wiki/Unix-Shell\)
 
@@ -31,7 +31,7 @@ There are two kinds of commands:
 | Type of command | Description                                         |
 |-----------------|-----------------------------------------------------|
 | Built-in        | Shell-internal commands, differ from shell to shell |
-| External        | Commands that do not come with the shell itself     |
+| External        | Commands that are not part of the shell itself      |
 
 #### Examples of built-in commands
 
@@ -74,7 +74,7 @@ Navigation
 | `Ctrl` + `c` | cancel command execution             |
 | `Ctrl` + `z` | interrupt command execution          |
 | `Ctrl` + `u` | clear prompt line                    |
-| `Ctrl` + `l` | clear screen                         |
+
 
 ### Movement
 
@@ -166,7 +166,7 @@ IO streams are a stream of characters. Their *descriptor* is the number that can
 
 (Sometimes the names of the IO streams are given in uppercase, e.g. STDIN, but refer to the same thing.)
 
-#### Reedirection
+#### Redirection
 
 | Operator | Description                                      | Example                                            |
 |----------|--------------------------------------------------|----------------------------------------------------|
