@@ -34,12 +34,25 @@ Fields seperated by whitespace:
 (1) login name
 (2) L = Locked password, NP = No password, P = usable password
 (3) date of last password change
-(4) Minimum age in d
-(5) Maximum age in d
+(4) Minimum password age in d
+(5) Maximum password age in d
 (6) Warning period in d
 (7) Inactivity period in d
 ```
 ## Shadow
+
+```
+root:$6$KMhjy7vTap6RJK1n$Pp.QizVJRxSd32rkjik43kosadVWrsZXMJpFC1wN7EJAj1jkEP3YAkfiyXTGHt3cqDvF/bvA2sOVwOxwDozjfSe.:17572::::::
+
+(1) login name
+(2) encrypted password 
+(3) date last password change, in d since Jan 1, 1970
+(4) Minimum password age in d
+(5) Maximum password age in d
+(6) Warning period in d
+(7) Inactivity period in d
+(8) Account expiration date
+```
 
 ## Group
 
