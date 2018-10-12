@@ -57,3 +57,12 @@ root:$6$KMhjy7vTap6RJK1n$Pp.QizVJRxSd32rkjik43kosadVWrsZXMJpFC1wN7EJAj1jkEP3YAkf
 ## Group
 
 ## Skeleton
+
+## Infos about users
+
+```
+> $ whoami
+ultem
+> $ id
+uid=1000(ultem) gid=1000(ultem) groups=1000(ultem),...
+```
