@@ -79,3 +79,37 @@ ssize_t write(int fd, const void *buf, size_t count);
 
 write(fd, buffer, count)
 ```
+
+
+##### Copy example
+
+````
+#include <fcntl.h>
+#include <stdlib.h>
+#define BSIZE 16384
+
+void main()
+{
+  int fin, fout;
+  char buf[BSIZE];
+  int count;
+  char inputfile[] = "inputfile";
+  char outputfile[] = "outputfile";
+
+  if ((fin = open(inputfile, O_RDONLY)) < 0) {
+    perror(inputfile);
+    exit(1);
+  }
+
+  if ((fout = open(outputfile, O_WRONLY | O_CREAT, 0644)) < 0) {
+    perror(outputfile);
+    exit(1);
+  }
+
+  while ((count = read(fin, buf, BSIZE)) > 0)
+    write(fout, buf, count);
+
+  close(fin);
+  close(fout);
+}
+````
